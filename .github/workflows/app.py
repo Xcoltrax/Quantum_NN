@@ -126,7 +126,7 @@ class Portfolio(BaseModel):
 
 class OptimizationRequest(BaseModel):
     optimization_id: str
-    callback_url: Optional[str] = "https://ormhkjdakokdoprwahvo.supabase.co/functions/v1/receive-optimization-results"
+    callback_url: Optional[str] = ""
     portfolio: Portfolio
 
 class AllocationOut(BaseModel):
